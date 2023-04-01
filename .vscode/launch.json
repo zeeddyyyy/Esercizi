@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/arabu/Desktop/Esercizi/funzione",
-      "program": "c:/Users/arabu/Desktop/Esercizi/funzione/build/Debug/outDebug",
+      "cwd": "c:/Users/arabu/Desktop/Esercizi/funzione contagiorni",
+      "program": "c:/Users/arabu/Desktop/Esercizi/funzione contagiorni/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
