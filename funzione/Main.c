@@ -50,7 +50,7 @@ int main()
              while(getchar()!='\n');
         }
         printf("\nInserisci l'anno: ");
-        while(scanf("%d",&dataFine.anno)!=1 || dataFine.anno <=0)
+        while(scanf("%d",&dataFine.anno)!=1 || dataFine.anno <=0 || dataFine.anno < dataInizio.anno)
         {
              printf("\nInserisci numero correttamente: ");
              while(getchar()!='\n');
