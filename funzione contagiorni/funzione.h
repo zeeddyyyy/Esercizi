@@ -7,7 +7,7 @@ int conta(Data dataI, Data dataF) // funziona solo con lo stesso anno di inizio 
     int mesi[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
 
 
-    if(dataI.mese == 2 || dataF.mese == 2)
+    if(dataI.mese == 2 || dataF.mese == 2 || dataI.anno == dataF.anno)
     {
         // controllo anno bisestile se febbraio è il mese iniziale o finale
             if (dataI.anno % 4 == 0 && (dataI.anno % 100 != 0 || dataI.anno % 400 == 0))
@@ -85,7 +85,10 @@ int conta(Data dataI, Data dataF) // funziona solo con lo stesso anno di inizio 
 
                                 // diversi
 
-    if(dataI.anno != dataF.anno){ // se gli anni sono diversi
+    if(dataI.anno != dataF.anno){
+         if(dataI.anno % 4 == 0 && (dataI.anno % 100 != 0 || dataI.anno % 400 == 0)){// anno bisestile 
+                mesi[1] = 29;
+            } // se gli anni sono diversi
         totAnni = dataF.anno - dataI.anno; // calcolo anni tra la data di inizio e quella di fine
         totGiorni = (mesi[dataI.mese - 1] - dataI.giorno) + dataF.giorno; // giorni nel mese di inizio e finale
         for(int i = dataI.mese; i < 12; i++) // somma dei giorni in tutti i mesi rimanenti dell'anno di inizio
